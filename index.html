@@ -1,83 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ℙℝ𝕆𝕄𝕀𝕊𝔼</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-            color: #333;
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            background-color: #f9f9f9;
         }
         .banner {
             width: 100%;
-            height: 200px;
-            background: url('https://i.pinimg.com/736x/0f/72/cb/0f72cbb504063c621dc8c6e0c710a999.jpg') center/cover no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
         }
-        .container {
+        .content {
             max-width: 800px;
-            background: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
             padding: 20px;
-            margin: 250px auto 20px auto;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        b {
-            font-size: 1.1em;
+        p {
+            text-align: justify;
+            line-height: 1.6;
         }
-        .bee {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background: url('https://img.freepik.com/premium-vector/cute-little-bee-hand-drawn-style_426735-383.jpg') center/contain no-repeat;
-            opacity: 0.7;
+        strong {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="banner"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const numBees = 50; // Número de abelhas
-            for (let i = 0; i < numBees; i++) {
-                let bee = document.createElement("div");
-                bee.classList.add("bee");
-                bee.style.top = Math.random() * window.innerHeight + "px";
-                bee.style.left = Math.random() * window.innerWidth + "px";
-                document.body.appendChild(bee);
-            }
-        });
-    </script>
-    <div class="container">
-        <p>
-            Tudo o que eu vivi contigo foi real. Cada "eu te amo" que eu disse foi, com certeza, um dos momentos mais puros da minha alma. <b>Não foi sobre uma ideia de você</b>, <b>foi sobre você de verdade.</b>
-        </p>
-        <p>
-            Não dá pra entender esse sentimento que sempre, sempre, sempre volta à tona—seja numa memória, num lugar, numa música, numa fala, numa mania, num gesto... Você está em tantas partes da minha vida que, mesmo que eu quisesse, não teria como apagar. E acho que o amor é sobre isso. Não entender. Não entender por que eu te amo, nem o tanto que eu te amo. Só sentir.
-        </p>
-        <p>
-            Mas eu também não consigo entender o que acontece entre a gente. Eu não consigo acreditar que era realmente você me falando aquelas coisas, me tratando daquele jeito. Eu não sei o que se passava na tua cabeça naquela hora, mas sei que aquilo me afetou. E ao mesmo tempo, eu também errei. Sei que fui imaturo apagando as mensagens, a foto, algumas atitudes minhas. Você significa muita coisa pra mim.
-        </p>
-        <p>
-            Eu não posso acreditar em tudo, porque sei que não sou isso, e acho que é claro que eu não quero ser um vagabundo ou um namorado horrível. Sempre iria estar ali pra você. Sempre quis estar.
-        </p>
-        <p>
-            Eu sempre vou querer melhorar—por você, mas também por mim. E no fim, acho que sempre vou te amar.
-        </p>
-        <p>
-            Eu não sei o que acontece agora, nem o que faço agora e nem se isso muda alguma coisa. só senti que precisava tirar isso do peito.
-        </p>
+    <div class="banner" style="background-image: url('https://i.pinimg.com/736x/0f/72/cb/0f72cbb504063c621dc8c6e0c710a999.jpg');"></div>
+    <div class="content">
+        <p>"Tudo o que eu vivi contigo foi real. Cada "eu te amo" que eu disse foi, com certeza, um dos momentos mais puros da minha alma. <strong>Não foi sobre uma ideia de você</strong>, <strong>foi sobre você de verdade.</strong></p>
+        
+        <p>Não dá pra entender esse sentimento que sempre, sempre, sempre volta à tona—seja numa memória, num lugar, numa música, numa fala, numa mania, num gesto... Você está em tantas partes da minha vida que, mesmo que eu quisesse, não teria como apagar. E acho que o amor é sobre isso. Não entender. Não entender por que eu te amo, nem o tanto que eu te amo. Só sentir.</p>
+        
+        <p>Mas eu também não consigo entender o que acontece entre a gente. Eu não consigo acreditar que era realmente você me falando aquelas coisas, me tratando daquele jeito. Eu não sei o que se passava na tua cabeça naquela hora, mas sei que aquilo me afetou. E ao mesmo tempo, eu também errei. Sei que fui imaturo apagando as mensagens, a foto, algumas atitudes minhas. Você significa muita coisa pra mim.</p>
+        
+        <p>Eu não posso acreditar em tudo, porque sei que não sou isso, e acho que é claro que eu não quero ser um vagabundo ou um namorado horrível. Sempre iria estar ali pra você. Sempre quis estar.</p>
+        
+        <p>Eu sempre vou querer melhorar—por você, mas também por mim, e no fim, vou sempre te amar.</p>
+        
+        <p>Eu não sei o que acontece agora, nem o que faço agora e nem se isso muda alguma coisa. Só senti que precisava tirar isso do peito."</p>
     </div>
 </body>
 </html>
