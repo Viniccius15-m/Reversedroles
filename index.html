@@ -8,32 +8,57 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('https://img.freepik.com/premium-vector/cute-little-bee-hand-drawn-style_426735-383.jpg') repeat;
+            background-color: #f8f8f8;
             font-family: Arial, sans-serif;
             color: #333;
             text-align: center;
-            padding-top: 20px;
+            position: relative;
+            overflow: hidden;
         }
         .banner {
             width: 100%;
             height: 200px;
             background: url('https://i.pinimg.com/736x/0f/72/cb/0f72cbb504063c621dc8c6e0c710a999.jpg') center/cover no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .container {
             max-width: 800px;
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            margin: 20px auto;
+            margin: 250px auto 20px auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
         }
         b {
             font-size: 1.1em;
+        }
+        .bee {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('https://img.freepik.com/premium-vector/cute-little-bee-hand-drawn-style_426735-383.jpg') center/contain no-repeat;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
     <div class="banner"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const numBees = 50; // Número de abelhas
+            for (let i = 0; i < numBees; i++) {
+                let bee = document.createElement("div");
+                bee.classList.add("bee");
+                bee.style.top = Math.random() * window.innerHeight + "px";
+                bee.style.left = Math.random() * window.innerWidth + "px";
+                document.body.appendChild(bee);
+            }
+        });
+    </script>
     <div class="container">
         <p>
             Tudo o que eu vivi contigo foi real. Cada "eu te amo" que eu disse foi, com certeza, um dos momentos mais puros da minha alma. <b>Não foi sobre uma ideia de você</b>, <b>foi sobre você de verdade.</b>
@@ -48,7 +73,7 @@
             Eu não posso acreditar em tudo, porque sei que não sou isso, e acho que é claro que eu não quero ser um vagabundo ou um namorado horrível. Sempre iria estar ali pra você. Sempre quis estar.
         </p>
         <p>
-            E, no fim, não acho que foi justo você sair desse jeito. Mas tudo bem. Como eu disse, eu sempre vou querer melhorar—por você, mas também por mim.
+            Eu sempre vou querer melhorar—por você, mas também por mim. E no fim, acho que sempre vou te amar.
         </p>
         <p>
             Eu não sei o que acontece agora, nem o que faço agora e nem se isso muda alguma coisa. só senti que precisava tirar isso do peito.
