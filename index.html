@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ℙℝ𝕆𝕄𝕀𝕊𝔼</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .banner {
-            width: 100%;
-            height: 250px;
-            background-size: cover;
-            background-position: center;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        p {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        strong {
-            font-weight: bold;
-        }
-    </style>
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner" style="background-image: url('https://i.pinimg.com/736x/0f/72/cb/0f72cbb504063c621dc8c6e0c710a999.jpg');"></div>
-    <div class="content">
-        <p>Tudo o que eu vivi contigo foi real. Cada "eu te amo" que eu disse foi, com certeza, um dos momentos mais puros da minha alma. <strong>Não foi sobre uma ideia de você</strong>, <strong>foi sobre você de verdade.</strong></p>
-        
-        <p>Não dá pra entender esse sentimento que sempre, sempre, sempre volta à tona—seja numa memória, num lugar, numa música, numa fala, numa mania, num gesto... Você está em tantas partes da minha vida que, mesmo que eu quisesse, não teria como apagar. E acho que o amor é sobre isso. Não entender. Não entender por que eu te amo, nem o tanto que eu te amo. Só sentir.</p>
-        
-        <p>Mas eu também não consigo entender o que acontece entre a gente. Eu não consigo acreditar que era realmente você me falando aquelas coisas, me tratando daquele jeito. Eu não sei o que se passava na tua cabeça naquela hora, mas sei que aquilo me afetou. E ao mesmo tempo, eu também errei. Sei que fui imaturo apagando as mensagens, a foto, algumas atitudes minhas. Você significa muita coisa pra mim.</p>
-        
-        <p>Eu não posso acreditar em tudo, porque sei que não sou isso, e acho que é claro que eu não quero ser um vagabundo ou um namorado horrível. Sempre iria estar ali pra você. Sempre quis estar.</p>
-        
-        <p>Sempre vou querer melhorar—por você, mas também por mim. E no fim, eu vou sempre te amar.</p>
-        
-        <p>Eu não sei o que acontece agora, nem o que faço agora e nem se isso muda alguma coisa. Só senti que precisava tirar isso do peito.</p>
-        
-        <div style="margin-top: 20px;">
-            <iframe width="100%" height="150" src="https://youtu.be/moINq-uxPtY?si=_adHPjZnoGCL2fEh" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container">
+        <h1>Feliz Aniversário</h1>
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/800462366914379856/1362171750447845636/7e0f9a35-d8d1-4b36-b21f-5cc979a042ea.jpg?ex=68016ccd&is=68001b4d&hm=15e541eaad50d12fcd991deca2278c330bf58689d15ed87488730632df009157&=&format=webp&width=373&height=662" alt="Imagem" class="image">
+        </div>
+        <div class="counter">
+            <p>Eu te amo há</p>
+            <div id="countdown"></div>
+        </div>
+        <button id="reveal-btn" onclick="revealText()">Clique aqui</button>
+        <div id="secret-text" class="secret-text">
+            <p>Não quero que, em nenhum momento, você pense que é difícil de amar.
+Seja por palavras ditas, silêncios trocados, dias difíceis...
+isso simplesmente não é verdade.
+
+Tem tanta coisa em você que eu admiro, mesmo de longe:
+seu jeito, seu carinho,
+a forma como você se dedica ao que acredita,
+sua risada que sempre parece não querer acabar,
+seu cabelo que muda como as estações —
+mas continua sendo você em cada versão.
+
+Você é especial.
+Fez parte da minha vida de um jeito que eu nunca vou esquecer.
+E tanto os momentos bons quanto os difíceis ao seu lado,
+eu vou guardar comigo, com carinho.
+Porque foi você.
+É você.
+
+Você merece tudo e mais um pouco —
+mesmo que, muitas vezes, tu mesma não acredite nisso.
+Pode ter certeza de que eu sempre vou acreditar.
+
+Só queria que você soubesse disso.
+Hoje, no seu dia.
+
+Mas agora… talvez eu precise nos deixar um pouco em paz.
+
+Obrigado.
+Feliz aniversário.
+
+</p>
         </div>
     </div>
+
+    <div class="hearts">
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
